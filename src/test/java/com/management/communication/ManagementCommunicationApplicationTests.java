@@ -1,10 +1,10 @@
-package com.management.managementorder;
+package com.management.communication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ManagementOrderApplicationTests {
+class ManagementCommunicationApplicationTests {
 
 	@Test
 	void contextLoads() {

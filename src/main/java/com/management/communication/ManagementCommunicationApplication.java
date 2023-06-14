@@ -1,13 +1,13 @@
-package com.management.managementorder;
+package com.management.communication;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ManagementOrderApplication {
+public class ManagementCommunicationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ManagementOrderApplication.class, args);
+		SpringApplication.run(ManagementCommunicationApplication.class, args);
 	}
 
 }

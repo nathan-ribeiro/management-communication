@@ -1,23 +1,16 @@
-version: '3.1'
+version: '3'
 
 services:
-
-  mongo:
-    image: mongo
-    container_name: mongo-test
-    restart: always
+  rabbitmq:
+    image: rabbitmq:3-management
     ports:
-      - 27017:27017
+      - "5672:5672"
+      - "15672:15672"
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+      - RABBITMQ_DEFAULT_USER=NathanRibeiro
+      - RABBITMQ_DEFAULT_PASS=pass123@
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
 
-  mongo-express:
-    image: mongo-express
-    container_name: mongo-express-test
-    restart: always
-    ports:
-      - 8081:8081
-    environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+volumes:
+  rabbitmq_data:
