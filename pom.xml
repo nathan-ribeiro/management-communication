@@ -12,7 +12,7 @@
 	<artifactId>management-communication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>management-communication</name>
-	<description>&quot;The project is responsible for communicating with the client to notify whether everything was correct or if something went wrong.</description>
+	<description>&quot;Spring Boot Project.</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

@@ -21,7 +21,7 @@ public class MessageService {
 
         String messageText = DEFAULT_MESSAGE_TEXT + messageDTO.getStatus();
         messageText = messageText.replace("?1", messageDTO.getName());
-        messageText = messageText.replace("?2", messageDTO.getOrderID().toString());
+        messageText = messageText.replace("?2", messageDTO.getOrderID());
         log.info("MessageText to send: " + messageText);
 
         emailSender.sendEmail(messageDTO.getEmail(), messageText);
